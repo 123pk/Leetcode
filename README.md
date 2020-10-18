@@ -2,7 +2,7 @@
 <br/>
 This repo contains  leetcode question solutions .
 <br/>
-1.Repeated DNA Sequences
+ <strong> 1. Repeated DNA Sequences </strong>
 <br/>
 <p>
    All DNA is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T', for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeate
