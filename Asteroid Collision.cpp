@@ -1,4 +1,4 @@
-    //My approach is to use <strong> stack </strong>
+    /*My approach is to use <strong> stack </strong>
       there are certain cases we need to take care of :- 
       1. if element is positive we push in stack.
       2. if stack is empty we push whatever element we have (negative or positive )
@@ -6,7 +6,7 @@
       4. if stack top element is positive we pop it out of stack until we find any element whose value is greater than or equal to abs( current element )
       5. if stack becomes empty after performing operation 4 we will push the current element in stack
       6. now we will take all the elements from stack and push it in vector and reverse it as stack uses LIFO( last in first out)
-    
+    */
     
     #include<bits/stdc++.h>
     using namespace std;
