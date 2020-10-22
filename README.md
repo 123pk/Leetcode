@@ -33,3 +33,14 @@ For each asteroid, the absolute value represents its size, and the sign represen
 
 Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.
  </p>
+ <br/>
+ <strong> 4.Minimum Depth of Binary Tree </strong>
+ <p>
+ Given a binary tree, find its minimum depth.
+
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+
+Note: A leaf is a node with no children.
+</p>
+
+ 
