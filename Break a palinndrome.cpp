@@ -6,3 +6,36 @@ Approach :- Take care of case when:-
           iii. for all other lengths we traverse through the first half and loof for values which are not 'a' if we found any we change it to 'a' else
                we change the last letter to 'b'.
 */
+class Solution {
+public:
+    string breakPalindrome(string palindrome) {
+        
+        int n=palindrome.size();
+        
+        if(n==1)return "";
+        
+        n/=2;
+        int m = palindrome.size();
+        
+        if(m==2||m==3){
+            if(palindrome[0]=='a'){
+                palindrome[m-1]='b';
+            }
+            else palindrome[0]='a';
+            return palindrome;
+        }
+        
+        
+        int f=0;
+        for(int i=0;i<n;++i){
+            if(palindrome[i]!='a'){
+                f=1;
+                palindrome[i]='a';
+                break;
+            }
+        }
+        
+        if(f==0)palindrome[m-1]='b';
+        return palindrome;
+    }
+};
