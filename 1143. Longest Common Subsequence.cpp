@@ -11,3 +11,25 @@ Approach :- We first write down bruteforce recursion where we start with the las
             This solutin is exponenetial and will give TLE to avoid TLE and make our program more efficient we will "memoise" values and will reuse them again when we need and will
             not compute again and the solution now have time complexity of (O(n^2)) which will pass.
 */
+class Solution {
+public:
+   int dp[1001][1001];
+    
+   int lcs(int i,int j,string&s,string&p){
+      if(i<0 || j <0)return 0;
+      if(dp[i][j]!=-1)return dp[i][j];
+    
+      if(s[i] == p[j]){
+          return dp[i][j] = 1+lcs(i-1,j-1,s,p);
+      }
+      else{
+          return dp[i][j] = max(lcs(i-1,j,s,p),lcs(i,j-1,s,p));
+      }
+    }
+    
+    int longestCommonSubsequence(string s, string p) {
+        memset(dp,-1,sizeof(dp));
+        int n = s.size(), m = p.size();
+        return lcs(n-1,m-1,s,p);
+    }
+};
